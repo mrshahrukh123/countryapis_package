@@ -1,0 +1,21 @@
+{
+    "name": "tdevelopers/cscapi",
+    "description": "This package will be used generate apis to list countries states and cities",
+    "version": "1.0.0",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Shah Rukh",
+            "email": "mrshahrukh123@gmail.com"
+        }
+    ],
+    "require": {
+        "jeroenzwart/laravel-csv-seeder": "1.*"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Tdev\\CSCAPI\\" : "src/"
+        }
+    }
+}

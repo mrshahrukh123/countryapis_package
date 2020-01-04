@@ -1,14 +1,17 @@
 <?php
+namespace Tdev\CSCAPI\Database\seeds;
 
 use JeroenZwart\CsvSeeder\CsvSeeder;
+use DB;
 
-class CitiesTableSeeder extends CsvSeeder
+class CountriesTableSeeder extends CsvSeeder
 {
-    public function __construct()
+
+	public function __construct()
     {
-        $this->file = '/database/seeds/csvs/cities.csv';
+        $this->file = '/packages/tdevelopers/cscapi/src/Database/seeds/csvs/countries.csv';
         $this->delimiter = ',';
-        $this->tablename = 'cities';
+        $this->tablename = 'countries';
         $this->timestamps = true;
         $this->truncate = false;
     }

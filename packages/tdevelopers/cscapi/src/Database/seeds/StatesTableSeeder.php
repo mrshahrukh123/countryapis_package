@@ -1,12 +1,14 @@
 <?php
+namespace Tdev\CSCAPI\Database\seeds;
 
 use JeroenZwart\CsvSeeder\CsvSeeder;
+use DB;
 
 class StatesTableSeeder extends CsvSeeder
 {
     public function __construct()
     {
-        $this->file = '/database/seeds/csvs/states.csv';
+        $this->file = '/packages/tdevelopers/cscapi/src/Database/seeds/csvs/states.csv';
         $this->delimiter = ',';
         $this->tablename = 'states';
         $this->timestamps = true;
